@@ -26,7 +26,7 @@ export default function AboutPage() {
 
         {/* Bio text */}
         <div className="w-full md:w-[45%]">
-          <h2 className="text-4xl font-bold text-black mb-6">Hi</h2>
+          <h2 className="text-4xl font-bold text-black mb-6">About Me</h2>
           <div className="flex flex-col gap-4 text-base leading-relaxed text-black">
             <p>
               Hey there! I am Vishwas Paliwal, also known online by the
