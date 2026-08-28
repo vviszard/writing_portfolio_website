@@ -16,16 +16,16 @@ export default function HomePage() {
       <div className="absolute inset-0 bg-black/40" />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col justify-between min-h-screen px-5 sm:px-12 md:px-16 lg:px-24 pt-6 pb-20 sm:py-12 md:py-16">
-        {/* Name - upper center */}
-        <div className="pt-4 sm:pt-12 md:pt-16 flex justify-center items-center">
+      <div className="relative z-10 flex flex-col justify-between min-h-screen px-5 sm:px-12 md:px-16 lg:px-24 pt-20 pb-16 sm:py-12 md:py-16">
+        {/* Name - clears mobile navbar and keeps desktop position */}
+        <div className="pt-2 sm:pt-12 md:pt-16 flex justify-center items-center">
           <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-tight text-center">
             Vishwas Paliwal
           </h1>
         </div>
 
-        {/* Bottom section */}
-        <div className="mt-auto pt-4 sm:pt-16 w-full">
+        {/* Bottom section: brought closer to name on mobile (mt-8), anchored to bottom on desktop (sm:mt-auto) */}
+        <div className="mt-8 sm:mt-auto pt-0 sm:pt-16 w-full">
           {/* Buttons: fits cleanly on mobile, desktop keeps position and size */}
           <div className="flex gap-3 sm:gap-6 mb-6 sm:mb-14 pl-0 sm:pl-16 md:pl-24 lg:pl-28">
             <Link
@@ -42,7 +42,7 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* Taglines: ~70% size on mobile so both are visible without scrolling */}
+          {/* Taglines: compact on mobile, desktop untouched */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 md:gap-16 items-start w-full">
             <div>
               <p className="text-white font-extrabold text-lg sm:text-3xl lg:text-4xl max-w-lg leading-snug text-left">
